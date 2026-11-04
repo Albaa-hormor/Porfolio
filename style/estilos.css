@@ -1,0 +1,56 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(../src/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:aqua;
+    margin: 0;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 130px;
+}
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+.border a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    background-color: #EBD1BA;
+    color: #29221E;
+    border-radius: 11px;
+    height: 70px;
+}
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 700px;
+    background-color: #EBD1BA;
+    color: #29221E;
+    border-radius: 40px;
+    height: 180px;  
+    margin-top: 25px;
+    margin-right: 0%;
+    margin-left: 35%;
+}
+.sesionfoto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 18%;
+    margin-top: -180px;
+}
+
+.foto {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
