@@ -54,3 +54,31 @@ body {
     height: auto;
     object-fit: contain;
 }
+.Descarga {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: #EBD1BA;
+    border-radius: 40px;
+    height: 100px;
+    width: 16%;
+    margin-right: 35px;
+    padding-right: 70px;
+   
+}
+#descargacv{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+#formacion {
+    background-image: url(../src/img/pergamino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 20%;
+    padding: 0 20%;
+    padding-top: 30%;
+    color: black;
+    align-items: right;
+}
