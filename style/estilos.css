@@ -74,11 +74,20 @@ body {
 #formacion {
     background-image: url(../src/img/pergamino.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 20%;
-    padding: 0 20%;
-    padding-top: 30%;
+    background-size: contain;
+    background-position: right;
+    width: 60%;
+    height: 72vh;
+    position: absolute;
+    right: 7%;
+    top: 175px;
     color: black;
-    align-items: right;
+    text-align: center;
+    padding-top: 80px;
+    color: darkgreen;
+    
+}
+.gif1 {
+    height: 25vh;
+    padding-bottom: 20%;
 }
