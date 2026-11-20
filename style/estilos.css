@@ -25,7 +25,9 @@ body {
     background-color: #EBD1BA;
     color: #29221E;
     border-radius: 11px;
-    height: 70px;
+    height: 50px;
+    padding: 20px;
+
 }
 #inicio {
     display: flex;
@@ -47,6 +49,7 @@ body {
     align-items: flex-start;
     padding-left: 18%;
     margin-top: -180px;
+    width: 70%;
 }
 
 .foto {
@@ -75,16 +78,19 @@ body {
     background-image: url(../src/img/pergamino.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
-    width: 60%;
-    height: 72vh;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
     position: absolute;
-    right: 7%;
-    top: 175px;
+    right: 15%;
+    top: 190px;
     color: black;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     color: darkgreen;
+    font-size: 29px;
+    border-radius: 50px;
+    
     
 }
 .gif1 {
