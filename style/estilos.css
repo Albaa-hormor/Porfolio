@@ -9,6 +9,8 @@ body {
     text-align: center;
     margin-top: 130px;
 }
+
+
 .border {
     display: flex;
     justify-content: center;
@@ -27,7 +29,18 @@ body {
     border-radius: 11px;
     height: 50px;
     padding: 20px;
+    cursor: pointer;
 
+}
+.border:hover a {
+    opacity: 0.65;
+    transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+}
+
+.border a:hover {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.04);
+    background-color: #f3d5b4;
 }
 #inicio {
     display: flex;
@@ -42,6 +55,11 @@ body {
     margin-top: 25px;
     margin-right: 0%;
     margin-left: 35%;
+    cursor: grab !important;
+    cursor: grabbing !important;
+}
+#inicio:active {
+    cursor: grabbing;
 }
 .sesionfoto {
     display: flex;
@@ -56,18 +74,49 @@ body {
     width: 250px;
     height: auto;
     object-fit: contain;
+    cursor: grab;
 }
 .Descarga {
-    display: flex;
+    display: block;
     justify-content: right;
     align-items: right;
     background-color: #EBD1BA;
     border-radius: 40px;
-    height: 100px;
-    width: 16%;
+    height: 140px;
+    width: 10%;
     margin-right: 35px;
     padding-right: 70px;
+    padding-left: 24px;
+
    
+}
+.pdf {
+    margin-top: 2px;
+}
+.Descarga a {
+    display: block;
+    animation: latidoTexto 3.5s ease-in-out infinite;
+    transition: transform 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.Descarga img {
+    width: 70px;
+    height: 70px;
+}
+
+.Descarga a:hover {
+    animation: none;
+    transform: scale(1.06);
+    letter-spacing: 0.5px;
+}
+
+@keyframes latidoTexto {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
 }
 #descargacv{
     display: flex;
@@ -93,7 +142,25 @@ body {
     
     
 }
+ul {
+    position: relative;
+    top: 40px;
+}
 .gif1 {
-    height: 25vh;
+    height: 15vh;
     padding-bottom: 20%;
+}
+@keyframes palpita {
+    0% {
+       transform: scale(1);
+    }
+    50% {
+    transform: scale(1.10);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+h3 {
+    animation: palpita 5s infinite;
 }
