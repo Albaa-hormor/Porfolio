@@ -43,15 +43,15 @@ body {
     background-color: #f3d5b4;
 }
 #inicio {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     width: 700px;
     background-color: #EBD1BA;
     color: #29221E;
     border-radius: 40px;
-    height: 180px;  
+    height: 260px;  
     margin-top: 25px;
     margin-right: 0%;
     margin-left: 35%;
@@ -66,7 +66,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 18%;
-    margin-top: -180px;
+    margin-top: -260px;
     width: 70%;
 }
 
@@ -163,4 +163,48 @@ ul {
 }
 h3 {
     animation: palpita 5s infinite;
+}
+.contenedor-flotante-derecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    z-index: 100;
+}
+
+.caja-contacto {
+    background-color: #EBD1BA;
+    color: #29221E;
+    border-radius: 20px;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+    max-width: 220px;
+}
+
+.caja-contacto a {
+    text-decoration: none;
+    color: #29221E;
+    font-size: 0.7rem;
+    display: block;
+}
+
+.caja-contacto p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.caja-contacto span {
+    font-size: 0.6rem;
+    text-decoration: underline;
+}
+
+.caja-contacto:hover {
+    transform: scale(1.05);
+    background-color: #f3d5b4;
+    cursor: pointer;
 }

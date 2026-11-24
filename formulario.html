@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <form action="https://httpbin.org/get" method="get">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <div class="fila">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required autofocus />
+        </div>
+        <div class="campo">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" required />
+        </div>
+      </div>
+      <div class="fila">
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" />
+        </div>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" min="18" max="100" />
+    </fieldset>
+    <fieldset>
+      <legend>Datos de la reserva</legend>
+      </div>
+      </div>
+      <div class="fila">
+        <div class="campo">
+          <label for="habitacion">Selecciona habitación</label>
+            <select id="habitacion" name="habitacion">
+              <option value="individual">Individual</option>
+              <option value="Doble">Doble</option>
+              <option value="Doble2C">Doble 2 camas</option>
+              <option value="Triple">Triple</option>
+              <option value="Cuadruple">Cuádruple</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="huespedes">Número de huéspedes</label>
+            <input type="number" id="huespedes" min="1" max="6" />
+          </div>
+        </div>
+        <label for="fecha">Fecha de llegada</label>
+        <input type="date" id="fecha" />
+
+    </fieldset>
+    </div>
+    <fieldset>
+      <legend>Régimen de alojamiento</legend>
+      <input type="radio" id="sa" name="alojamiento" value="sa" checked />
+      <label for="sa">Solo Alojamiento</label>
+
+      <input type="radio" id="desayuno" name="alojamiento" value="desayuno" />
+      <label for="desayuno">Desayuno incluido</label>
+
+      <input type="radio" id="mediapension" name="alojamiento" value="mediapension" />
+      <label for="mediapension">Media pensión</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Servicios Adicionales</legend>
+      <label for="servicios">Servicios adicionales</label>
+      <select id="servicios" name="servicios" multiple size="1">
+        <option value="Aparcamiento">Aparcamiento</option>
+        <option value="Cuna">Cuna</option>
+        <option value="Serviciolavanderia">Servicio de lavandería</option>
+        <option value="VisitaGuiada">Visita Guiada</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Información Adicional</legend>
+      <label for="codigo">Código</label>
+      <input type="text" id="codigo" name="codigo" value="CR2026" readonly />
+
+      <label for="descuento">Descuento promocional</label>
+      <input type="text" id="descuento" name="descuento" value="NO DISPONIBLE" disabled />
+
+      <label for="codigocl">Código de Cliente</label>
+      <input type="number" id="codigocl" name="codigocl" pattern="[0-9]{6}" title="Introduce seis numeros" required />
+    <label for="observaciones">Observaciones</label>
+     <textarea id="observaciones" name="observaciones" rows="10"></textarea>
+    </fieldset>
+    <button type="submit" class="boton-enviar">Enviar</button>
+    <button type="reset" class="boton-borrar">Borrar</button>
+  </form>
+  <img src="img/book.gif" alt="fotoreserva" style="margin-left: 120px; width: 200px; height: auto" />
+</body>
+
+</html>
